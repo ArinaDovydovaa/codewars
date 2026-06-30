@@ -1,0 +1,20 @@
+//Write a function that takes an array of strings as an argument
+// and returns a sorted array containing the same strings,
+// ordered from shortest to longest.
+//
+//Напишите функцию, которая принимает массив строк в качестве аргумента
+// и возвращает отсортированный массив, содержащий те же строки,
+// упорядоченные от самой короткой к самой длинной.
+
+function sortByLength (array) {
+ return array.sort((a, b) => a.length - b.length);
+}
+
+//стрелочная
+const sortByLength = array => array.sort((a, b) => a.length - b.length);
+
+
+console.log(sortByLength(["Beg", "Life", "I", "To"]))
+console.log(sortByLength(["", "Moderately", "Brains", "Pizza"]))
+console.log(sortByLength(["Longer", "Longest", "Short"]))
+
